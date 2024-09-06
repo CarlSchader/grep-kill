@@ -1,4 +1,4 @@
 #! /bin/sh
 
-ps -a | grep $1 | awk '{print $1}' | xargs kill -9
+ps -A | grep $1 | awk '{print $1}' | xargs kill -9
 
